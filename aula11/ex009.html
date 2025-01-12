@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Países</title>
+    <title>Sistema de Países</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+
+        input {
+            font-size: 14pt;
+            width: 100px;
+        }
+
+        div#res {
+            margin-top: 15px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Sistema de Países</h1>
-    Seu país de naturalidade é <input type="text" name="txtn1" id="txtn1">
-    <input type="button" value="consultar" onclick="verificar()">
-    <div id="res"></div>
+    De qual país você é <input type="text" name="txtp1" id="txtp1"> Veja aqui o resultado:
+    <input type="button" value="consultar" onclick="consulta()">
+    <div id="res">
+
+    </div>
 
     <script>
-        function verificar(){
-            var a = 'Brasil'
-            var n1 = window.document.getElementById('txtn1')
+        var nome = window.prompt ('Qual é seu nome?')
+        function consulta(){
+            var pais = 'Brasil'
+            var locl = window.document.getElementById('txtp1')
             var res = window.document.getElementById('res')
-            var pais = (txtn1.value)
-            res.innerHTML = `<p>Vivendo em <strong>${pais}</strong></p>`
+            
 
-            if (a == 'Brasil') { 
-                res.innerHTML += `Você é estrangeiro` 
+            if (locl.value == 'Brasil'){
+                res.innerHTML += `<p>Olá ${nome} você é Brasileiro!</p>`
             } else {
-                res.innerHTML += `você é brasileiro`
+                res.innerHTML += `<p>Olá ${nome} você é estrangeiro!</p>`
             }
+
         }
     </script>
 </body>
