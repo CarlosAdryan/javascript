@@ -2,30 +2,30 @@
 
 body {
     background-color: rgb(70, 142, 236);
-    font: normal 15pt arial;
+    font: normal 15pt arial;  
 }
 
 header {
-    text-align: center;
     color: white;
+    text-align: center;
 }
 
 section {
     background-color: white;
-    width: 500px;
     border-radius: 10px;
-    margin: auto;
     padding: 15px;
+    width: 500px;
+    margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363)
 }
 
 div {
-    padding: 8px;
     text-align: center;
+    padding: 8px;
 }
 
 footer {
-    font-style: italic;
-    text-align: center;
     color: white;
+    text-align: center;
+    font-style: italic;
 }
