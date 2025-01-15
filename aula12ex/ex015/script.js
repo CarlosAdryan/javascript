@@ -19,7 +19,7 @@ function verificar() {
             } else if ( idade < 21) {
                 // Jovem
                 img.setAttribute('src', 'foto-jovem-m.png')
-            }else if (idade < 50) {
+            } else if (idade < 50) {
                 // Adulto
                 img.setAttribute('src', 'foto-adulto-m.png')
             } else {
@@ -45,5 +45,5 @@ function verificar() {
         res.style.texAlign ='center'
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.` 
         res.appendChild(img)
-    }
+        }
 }
